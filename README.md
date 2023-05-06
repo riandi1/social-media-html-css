@@ -20,6 +20,7 @@ Si deseas utilizar SocialNet en tu proyecto, simplemente clona este repositorio 
 
 ```bash
 git clone https://github.com/tu-usuario/socialnet.git
+```
 
 ## Contribuciones
 
