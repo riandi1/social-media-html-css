@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile page - Social Book</title>
+    <!-- styles -->
+    <link rel="stylesheet" href="style.css">
+    <!-- icons -->
+    <script src="https://kit.fontawesome.com/eee9b60385.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav>
+        <div class="nav-left">
+            <img src="images/logo.png" alt="" class="logo">
+            <ul>
+                <li>
+                    <img src="images/notification.png" alt="">
+                </li>
+                <li>
+                    <img src="images/inbox.png" alt="">
+                </li>
+                <li>
+                    <img src="images/video.png" alt="">
+                </li>
+            </ul>
+        </div>
+        <!-- box input search -->
+        <div class="nav-right">
+            <div class="search-box">
+                <img src="images/search.png">
+                <input type="text" placeholder="Search">
+            </div>
+            <div class="nav-user-icon online" onclick="settingsMenuToggle()">
+                <img src="images/profile-pic.png" alt="">
+            </div>
+        </div>
+        <!-- settings menu -->
+        <div class="settings-menu">
+            <div id="dark-btn">
+                <span></span>
+            </div>
+            <div class="settings-menu-inner">
+                <div class="user-profile">
+                    <img src="images/profile-pic.png">
+                    <div>
+                        <p>John Nicholson</p>
+                        <a href="#">Perfil</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="user-profile">
+                    <img src="images/feedback.png">
+                    <div>
+                        <p>Opinion</p>
+                        <a href="#">Ayúdanos a mejorar el nuevo diseño</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="settings-links">
+                    <img src="images/setting.png" class="setting-icon">
+                    <a href="#">Configuracion y Privacidad <img src="images/arrow.png" width="10px" alt=""></a>
+                </div>
+                <div class="settings-links">
+                    <img src="images/help.png" class="setting-icon">
+                    <a href="#">Ayuda y Soporte<img src="images/arrow.png" width="10px" alt=""></a>
+                </div>
+                <div class="settings-links">
+                    <img src="images/display.png" class="setting-icon">
+                    <a href="#">Accesibilidad <img src="images/arrow.png" width="10px" alt=""></a>
+                </div>
+                <div class="settings-links">
+                    <img src="images/logout.png" class="setting-icon">
+                    <a href="#">Cerrar Session <img src="images/arrow.png" width="10px" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- end navbar -->
+
+    <!-- profile page -->
+    <div class="profile-container">
+        <img src="images/cover.png" class="cover-img">
+        <div class="profile-details">
+            <div class="pd-left">
+                <div class="pd-row">
+                    <img src="images/profile.png" class="pd-images">
+                    <div>
+                        <h3>Jack Nicholson</h3>
+                        <p>120 Friends - 20 mutual</p>
+                        <img src="images/member-1.png" alt="">
+                        <img src="images/member-2.png" alt="">
+                        <img src="images/member-3.png" alt="">
+                        <img src="images/member-4.png" alt="">
+
+                    </div>
+                </div>
+            </div>
+            <div class="pd-right">
+                <button type="button"><img src="images/add-friends.png" alt=""> Amigos</button>
+                <button type="button"><img src="images/message.png" alt=""> Mensaje</button>
+                <br>
+                <a href="#"><img src="images/more.png" alt=""></a>
+            </div>
+        </div>
+
+        <div class="profile-info">
+            <div class="info-col">
+                <div class="profile-intro">
+                    <h3>Intro</h3>
+                    <p class="intro-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente nisi nobis molestiae mollitia. <img src="images/feeling.png" alt=""></p>
+                    <hr>
+                    <ul>
+                        <li>Directo de 99Media Ltd</li>
+                        <li>Estudio en la Universidad de Antioquia</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="post-col">
+                <!-- write -->
+                <div class="write-post-container">
+                    <div class="user-profile">
+                        <img src="images/profile-pic.png">
+                        <div>
+                            <p>John Nicholson</p>
+                            <small>Publico <i class="fas fa-caret-down"></i></small>
+                        </div>
+                    </div>
+
+                    <div class="post-input-container">
+                        <textarea rows="3" placeholder="Que estas pensando, John?"></textarea>
+                        <div class="add-post-links">
+                            <a href="#">
+                                <img src="images/live-video.png" alt=""> Live Video
+                            </a>
+                            <a href="#">
+                                <img src="images/photo.png" alt=""> Foto/Video
+                            </a>
+                            <a href="#">
+                                <img src="images/feeling.png" alt=""> Actividad
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- post 1 -->
+                <div class="post-container">
+                    <div class="post-row">
+                        <div class="user-profile">
+                            <img src="images/profile-pic.png">
+                            <div>
+                                <p>John Nicholson</p>
+                                <span>Junio 24 2021, 13:40 pm</span>
+                            </div>
+                        </div>
+                        <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                    </div>
+                    <p class="post-text">¡Aventura en la montaña! Escalamos hasta la cima y la vista era impresionante.
+                        🏔️🌄<a href="#">#Senderismo</a></p>
+                    <img src="images/feed-image-1.png" class="post-img">
+
+                    <div class="post-row">
+                        <div class="activity-icons">
+                            <div>
+                                <img src="images/like-blue.png" alt=""> 120
+                            </div>
+                            <div>
+                                <img src="images/comments.png" alt=""> 45
+                            </div>
+                            <div>
+                                <img src="images/share.png" alt=""> 20
+                            </div>
+
+                        </div>
+                        <div class="post-profile-icon">
+                            <img src="images/profile-pic.png" alt=""> <i class="fas fa-caret-down"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- post 2 -->
+                <div class="post-container">
+                    <div class="post-row">
+                        <div class="user-profile">
+                            <img src="images/profile-pic.png">
+                            <div>
+                                <p>John Nicholson</p>
+                                <span>Junio 24 2021, 13:40 pm</span>
+                            </div>
+                        </div>
+                        <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                    </div>
+                    <p class="post-text">Increíble concierto anoche, la música me transportó a otro mundo. 🎵🎶<a
+                            href="#">#ExperienciaInolvidable</a></p>
+                    <img src="images/feed-image-2.png" class="post-img">
+
+                    <div class="post-row">
+                        <div class="activity-icons">
+                            <div>
+                                <img src="images/like-blue.png" alt=""> 120
+                            </div>
+                            <div>
+                                <img src="images/comments.png" alt=""> 45
+                            </div>
+                            <div>
+                                <img src="images/share.png" alt=""> 20
+                            </div>
+
+                        </div>
+                        <div class="post-profile-icon">
+                            <img src="images/profile-pic.png" alt=""> <i class="fas fa-caret-down"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- post 3 -->
+                <div class="post-container">
+                    <div class="post-row">
+                        <div class="user-profile">
+                            <img src="images/profile-pic.png">
+                            <div>
+                                <p>John Nicholson</p>
+                                <span>Junio 24 2021, 13:40 pm</span>
+                            </div>
+                        </div>
+                        <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                    </div>
+                    <p class="post-text">Disfrutando de una tarde relajada en el parque, leyendo mi libro favorito bajo
+                        la
+                        sombra de un árbol. 📚🌳<a href="#">#TiempoParaMí</a></p>
+                    <img src="images/feed-image-3.png" class="post-img">
+
+                    <div class="post-row">
+                        <div class="activity-icons">
+                            <div>
+                                <img src="images/like-blue.png" alt=""> 120
+                            </div>
+                            <div>
+                                <img src="images/comments.png" alt=""> 45
+                            </div>
+                            <div>
+                                <img src="images/share.png" alt=""> 20
+                            </div>
+
+                        </div>
+                        <div class="post-profile-icon">
+                            <img src="images/profile-pic.png" alt=""> <i class="fas fa-caret-down"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- post 4 -->
+                <div class="post-container">
+                    <div class="post-row">
+                        <div class="user-profile">
+                            <img src="images/profile-pic.png">
+                            <div>
+                                <p>John Nicholson</p>
+                                <span>Junio 24 2021, 13:40 pm</span>
+                            </div>
+                        </div>
+                        <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                    </div>
+                    <p class="post-text">Celebrando con amigos en la fiesta de cumpleaños de mi mejor amiga. ¡Muchas
+                        risas y
+                        momentos divertidos! 🎉🎂<a href="#">#Amistad</a></p>
+                    <img src="images/feed-image-4.png" class="post-img">
+
+                    <div class="post-row">
+                        <div class="activity-icons">
+                            <div>
+                                <img src="images/like-blue.png" alt=""> 120
+                            </div>
+                            <div>
+                                <img src="images/comments.png" alt=""> 45
+                            </div>
+                            <div>
+                                <img src="images/share.png" alt=""> 20
+                            </div>
+
+                        </div>
+                        <div class="post-profile-icon">
+                            <img src="images/profile-pic.png" alt=""> <i class="fas fa-caret-down"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <div class="footer">
+        <p>Copyright © 2023 - Todos los derechos reservados RiandiCode</p>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
